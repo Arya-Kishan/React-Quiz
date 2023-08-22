@@ -4,6 +4,8 @@ import { Context } from '../AppContext'
 
 export default function Question({ fetch_cont }) {
 
+    console.log(fetch_cont)
+
     const { score, setScore } = useContext(Context)
     const Navigate = useNavigate()
 

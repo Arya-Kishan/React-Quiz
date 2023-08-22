@@ -20,7 +20,7 @@ export default function Homepage() {
                 <div className='category_box'>
                     {Categories.map((e, i) => {
                         return <div className='category_name' key={i} onClick={() => { handleClick(e.value) }}>
-                            <img src={e.img} alt="" srcset="" /> <span>{e.category}</span>
+                            <img src={e.img} alt=""/> <span>{e.category}</span>
                         </div>
                     })}
                 </div>
