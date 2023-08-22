@@ -1,9 +1,10 @@
+import "./Welcome.css"
 import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Context } from '../AppContext'
-import Welcomepic from '../welcome.svg'
-import logo from './logo.png'
-import hide2 from './hide2.gif'
+import { Context } from '../../AppContext'
+import Welcomepic from '../../welcome.svg'
+import logo from '../logo.png'
+import hide2 from '../hide2.gif'
 
 export default function Welcome() {
   const Navigate = useNavigate()

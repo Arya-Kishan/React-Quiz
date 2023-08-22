@@ -1,0 +1,15 @@
+.quiz_sec {
+    background: linear-gradient(blue, rgb(71, 71, 199));
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1vh;
+  }
+  
+  .quiz_sec h1 {
+    color: white;
+    font-size: 40px;
+    padding-bottom: 5vh;
+  }

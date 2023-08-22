@@ -1,10 +1,10 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import AppContext from './AppContext';
-import Welcome from './Components/Welcome';
-import Homepage from './Components/Homepage';
-import Quizpage from './Components/Quizpage';
-import Finish from './Components/Finish';
+import Welcome from './Components/WelcomeMain/Welcome';
+import Homepage from './Components/HomepageMain/Homepage';
+import Quizpage from './Components/QuizpageMain/Quizpage';
+import Finish from './Components/FinishMain/Finish';
 
 function App() {
   return (

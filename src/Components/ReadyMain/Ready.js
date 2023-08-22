@@ -1,9 +1,10 @@
+import './Ready.css'
 import React, { useContext, useRef } from 'react'
-import {Context} from '../AppContext'
+import { Context } from '../../AppContext'
 
 export default function Ready() {
   const body = useRef()
-  const {name} = useContext(Context)
+  const { name } = useContext(Context)
 
   const handleStart = (e) => {
     body.current.className = "ready_sec remove"

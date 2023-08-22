@@ -1,0 +1,65 @@
+.finish {
+    background: linear-gradient(blue, rgb(12, 12, 83));
+    height: calc(100vh - 66.400px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 2vh;
+  }
+  
+  .finish div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  
+  .finish_img {
+    background-image: url("../../../public/quit.svg");
+    height: 50vh;
+    width: 50vw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .finish h1 {
+    color: white;
+  }
+  
+  .finish button {
+    background-color: blue;
+    color: white;
+    padding: 1vw 2vw;
+    border: 2px solid blue;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width : 700px) {
+    .finish {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 10vh;
+      }
+    
+      .finish_img {
+        height: 80vw;
+        width: 80vw;
+      }
+  }

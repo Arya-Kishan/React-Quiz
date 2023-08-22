@@ -1,6 +1,7 @@
+import './Question.css'
 import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Context } from '../AppContext'
+import { Context } from '../../AppContext'
 
 export default function Question({ fetch_cont }) {
 

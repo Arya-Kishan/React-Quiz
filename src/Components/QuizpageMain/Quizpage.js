@@ -1,7 +1,8 @@
+import './Quizpage.css'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import Question from './Question'
-import Ready from './Ready'
+import Question from '../QuestionMain/Question'
+import Ready from '../ReadyMain/Ready'
 
 export default function Quizpage() {
 

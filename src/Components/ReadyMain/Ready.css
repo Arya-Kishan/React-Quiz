@@ -1,0 +1,106 @@
+.ready_sec {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(blue, rgb(9, 9, 60));
+    z-index: 10;
+    display: grid;
+    place-items: center;
+  }
+  
+  .ready_sec>div {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vh;
+    text-align: center;
+  }
+  
+  .ready_img {
+    background-image: url("../../../public/ready.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40vw;
+    width: 40vw;
+  }
+  
+  .ready_sec h1 {
+    color: white;
+    font-size: 4vw;
+  }
+  
+  .ready_sec p {
+    color: white;
+    font-size: 1.5vw;
+  }
+  
+  .ready_box2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  
+  .ready_box2 h1 {
+    text-transform: capitalize;
+  }
+  
+  .ready_sec button {
+    background-color: rgb(41, 41, 140);
+    border: 2px solid blue;
+    color: white;
+    padding: 2vh 5vh;
+    font-size: 2vh;
+    cursor: pointer;
+  }
+  
+  .remove {
+    animation: down .5s ease forwards;
+  }
+  
+  @keyframes down {
+    0% {
+      top: 0;
+    }
+  
+    100% {
+      top: 100%;
+    }
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width : 700px) {
+    .ready_sec > div {
+        grid-template-columns: 1fr;
+        gap: 10vh;
+        
+      }
+    
+      .ready_img {
+        height: 70vw;
+        width: 70vw;
+      }
+    
+      .ready_sec h1 {
+        color: white;
+        font-size: 8vw;
+      }
+    
+      .ready_sec p {
+        color: white;
+        font-size: 3vw;
+      }
+  }

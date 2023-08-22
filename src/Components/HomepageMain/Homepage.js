@@ -1,6 +1,7 @@
-import Categories from './Data'
+import './Homepage.css'
+import Categories from '../Data'
 import { useNavigate } from 'react-router-dom'
-import { Context } from '../AppContext'
+import { Context } from '../../AppContext'
 import { useContext } from 'react'
 
 export default function Homepage() {

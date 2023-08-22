@@ -1,0 +1,141 @@
+.quiz_section {
+    width: 100vw;
+    height: 70vh;
+}
+
+.quiz_box2 p {
+    color: white;
+}
+
+.quiz_box {
+    background-color: blueviolet;
+    height: 80%;
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 0 8px 8px blueviolet;
+}
+
+.quiz_box1 {
+    background-image: url("../../../public/ques.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.quiz_box2 {
+    background-color: blue;
+    padding: 1vw;
+    border-radius: 20px;
+}
+
+.quiz_questions {
+    min-height: 20%;
+    display: grid;
+    place-items: center;
+}
+
+.quiz_options {
+    border: 2px solid blue;
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    gap: 10%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.quiz_options button {
+    display: grid;
+    place-items: center;
+    color: rgb(0, 0, 0);
+    padding: .8vw 3vw;
+    border: 2px solid rgb(132, 0, 255);
+    border-radius: 10px;
+    width: 100%;
+    height: 60%;
+    cursor: pointer;
+    overflow-y: scroll;
+}
+
+.quiz_nav {
+    position: relative;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.quiz_nav button {
+    background-color: blue;
+    padding: .5vw 1vw;
+    border: 2px solid blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 700px) {
+    .quiz_section {
+        padding: 0 4vh;
+        min-height: 90vh;
+    }
+
+    .quiz_sec h1 {
+        padding: 0;
+    }
+
+    .quiz_box {
+        grid-template-columns: 1fr;
+        grid-template-rows: .7fr 1.3fr;
+        gap: 2vh;
+    }
+
+    .quiz_box2 {
+        background-color: blue;
+        padding: 1vh 2vh;
+    }
+
+    .quiz_questions {
+        min-height: 20%;
+        display: grid;
+        place-items: center;
+    }
+
+    .quiz_options {
+        border: 2px solid blue;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: self-start;
+    }
+
+    .quiz_options button {
+        width: 100%;
+        box-shadow: 0 0 2px 2px wheat;
+        color: blue;
+    }
+
+    .quiz_nav button {
+        background-color: rgb(97, 113, 234);
+        padding: .5vh 1vh;
+    }
+}

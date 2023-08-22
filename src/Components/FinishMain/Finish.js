@@ -1,5 +1,6 @@
+import './Finish.css'
 import React, { useContext } from 'react'
-import { Context } from '../AppContext'
+import { Context } from '../../AppContext'
 import { useNavigate } from 'react-router-dom'
 
 export default function Finish() {
